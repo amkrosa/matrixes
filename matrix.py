@@ -34,7 +34,7 @@ class Matrix(object):
             resultMatrix = Matrix(self.p, targetMatrix.q)
             for x in range(self.p):
                 for y in range(matrix_t.p):
-                    resultMatrix[x][y] = sum([int(item[0])*int(item[1]) for item in zip(self.rows[x], matrix_t[y])]) #<<zrozumiec to
+                    resultMatrix[x][y] = sum([int(item[0])*int(item[1]) for item in zip(self.rows[x], matrix_t[y])])
             return resultMatrix
 
 
